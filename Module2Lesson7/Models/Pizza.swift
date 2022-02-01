@@ -32,6 +32,9 @@ struct Pizza: Hashable {
         get {
             return self.topping1
         }
+        set(topping) {
+            self.topping1 = topping
+        }
     }
     
     var Topping2: String {

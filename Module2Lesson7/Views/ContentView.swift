@@ -11,7 +11,7 @@ struct ContentView: View {
     
     
    var model = RecipeModel()
-    var pizzaModel = PizzaModel()
+   @ObservedObject var pizzaModel = PizzaModel()
     
     var body: some View {
         List(model.recipes, id:\.self) { rec in
@@ -38,6 +38,19 @@ struct ContentView: View {
                 }
             }
         }
+        HStack{
+            Button(action: {
+                self.pizzaModel.addPizza("Pizza 4", "Beans", "Beans", "Beans")
+            }, label: {
+                Text("Stink Me!")
+            })
+            Button(action: {
+                self.pizzaModel.addPinnapple()
+            }, label: {
+                Text("Pinapple me!")
+            })
+        }
+
     }
 }
 
