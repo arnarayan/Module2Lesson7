@@ -14,42 +14,28 @@ struct ContentView: View {
    @ObservedObject var pizzaModel = PizzaModel()
     
     var body: some View {
-        List(model.recipes, id:\.self) { rec in
-            VStack {
-                HStack {
-                    Text(rec.name)
-                    Text("--")
-                    Text(rec.cuisine)
+        Text("This is your pizza Order!")
+        if (pizzaModel.errorMessage == "") {
+            List(pizzaModel.pizzaArray, id: \.self) {pz in
+                
+                VStack(alignment: .leading) {
+                    Text(pz.name)
+                        .font(.largeTitle)
+                        .foregroundColor(Color.orange)
+                        .multilineTextAlignment(.leading)
+                    HStack{
+                        Text(pz.topping1)
+                        Text(pz.topping2)
+                        Text(pz.topping3)
+                    }
                 }
             }
+        }
+        else {
+            Text(pizzaModel.errorMessage)
         }
 
-        List(pizzaModel.pizzaArray, id: \.self) {pz in
-            
-            VStack(alignment: .leading) {
-                Text(pz.Name)
-                    .font(.largeTitle)
-                    .foregroundColor(Color.orange)
-                    .multilineTextAlignment(.leading)
-                HStack{
-                    Text(pz.Topping1)
-                    Text(pz.Topping2)
-                    Text(pz.Topping3)
-                }
-            }
-        }
-        HStack{
-            Button(action: {
-                self.pizzaModel.addPizza("Pizza 4", "Beans", "Beans", "Beans")
-            }, label: {
-                Text("Stink Me!")
-            })
-            Button(action: {
-                self.pizzaModel.addPinnapple()
-            }, label: {
-                Text("Pinapple me!")
-            })
-        }
+
 
     }
 }

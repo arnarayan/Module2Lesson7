@@ -15,10 +15,11 @@
 		0053EB6527A6F77500555E46 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EB6427A6F77500555E46 /* RecipeModel.swift */; };
 		0053EB6727A7284E00555E46 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EB6627A7284E00555E46 /* Pizza.swift */; };
 		0053EB6927A728EB00555E46 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EB6827A728EB00555E46 /* PizzaModel.swift */; };
+		0053EB8627AE460000555E46 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0053EB8527AB7F5B00555E46 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0053EB4E27A6F4AE00555E46 /* Module2Lesson7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module2Lesson7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0053EB4E27A6F4AE00555E46 /* Module2Lesson12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module2Lesson12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0053EB5127A6F4AE00555E46 /* Module2Lesson7App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Lesson7App.swift; sourceTree = "<group>"; };
 		0053EB5327A6F4AE00555E46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0053EB5527A6F4B000555E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 		0053EB6427A6F77500555E46 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		0053EB6627A7284E00555E46 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		0053EB6827A728EB00555E46 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		0053EB8527AB7F5B00555E46 /* data.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 		0053EB4F27A6F4AE00555E46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0053EB4E27A6F4AE00555E46 /* Module2Lesson7.app */,
+				0053EB4E27A6F4AE00555E46 /* Module2Lesson12.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +61,7 @@
 		0053EB5027A6F4AE00555E46 /* Module2Lesson7 */ = {
 			isa = PBXGroup;
 			children = (
+				0053EB8427AB7F0100555E46 /* Data */,
 				0053EB5127A6F4AE00555E46 /* Module2Lesson7App.swift */,
 				0053EB5F27A6F4F300555E46 /* Models */,
 				0053EB6127A6F50E00555E46 /* ViewModels */,
@@ -103,12 +106,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		0053EB8427AB7F0100555E46 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0053EB8527AB7F5B00555E46 /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0053EB4D27A6F4AE00555E46 /* Module2Lesson7 */ = {
+		0053EB4D27A6F4AE00555E46 /* Module2Lesson12 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0053EB5C27A6F4B000555E46 /* Build configuration list for PBXNativeTarget "Module2Lesson7" */;
+			buildConfigurationList = 0053EB5C27A6F4B000555E46 /* Build configuration list for PBXNativeTarget "Module2Lesson12" */;
 			buildPhases = (
 				0053EB4A27A6F4AE00555E46 /* Sources */,
 				0053EB4B27A6F4AE00555E46 /* Frameworks */,
@@ -118,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = Module2Lesson7;
+			name = Module2Lesson12;
 			productName = Module2Lesson7;
-			productReference = 0053EB4E27A6F4AE00555E46 /* Module2Lesson7.app */;
+			productReference = 0053EB4E27A6F4AE00555E46 /* Module2Lesson12.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0053EB4927A6F4AE00555E46 /* Build configuration list for PBXProject "Module2Lesson7" */;
+			buildConfigurationList = 0053EB4927A6F4AE00555E46 /* Build configuration list for PBXProject "Module2Lesson12" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0053EB4D27A6F4AE00555E46 /* Module2Lesson7 */,
+				0053EB4D27A6F4AE00555E46 /* Module2Lesson12 */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0053EB5927A6F4B000555E46 /* Preview Assets.xcassets in Resources */,
+				0053EB8627AE460000555E46 /* data.json in Resources */,
 				0053EB5627A6F4B000555E46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0053EB4927A6F4AE00555E46 /* Build configuration list for PBXProject "Module2Lesson7" */ = {
+		0053EB4927A6F4AE00555E46 /* Build configuration list for PBXProject "Module2Lesson12" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0053EB5A27A6F4B000555E46 /* Debug */,
@@ -371,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0053EB5C27A6F4B000555E46 /* Build configuration list for PBXNativeTarget "Module2Lesson7" */ = {
+		0053EB5C27A6F4B000555E46 /* Build configuration list for PBXNativeTarget "Module2Lesson12" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0053EB5D27A6F4B000555E46 /* Debug */,

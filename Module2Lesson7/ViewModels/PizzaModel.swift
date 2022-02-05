@@ -11,28 +11,36 @@ import SwiftUI
 class PizzaModel: ObservableObject {
     
     @Published var pizzaArray:[Pizza] = [Pizza]()
+    @Published var errorMessage = ""
     
     init() {
-        self.createMenu()
-    }
-    
+        // Get path to the json file within the app bundle
+        
+        if let path = Bundle.main.path(forResource: "data", ofType: "json") {
+            let fileUrl = URL(fileURLWithPath: path)
+            
+            do{
+                let data = try Data(contentsOf: fileUrl)
+                let decoder = JSONDecoder()
+                let response = try decoder.decode([Pizza].self, from: data)
 
-    
-    func addPizza(_ name: String, _ topping1: String, _ topping2: String, _ topping3: String) {
-        self.pizzaArray.append(Pizza(name, topping1, topping2, topping3))
-    }
-    
-    func addPinnapple() {
-        for (index,_) in self.pizzaArray.enumerated() {
-            self.pizzaArray[index].Topping1 = "Pinnapple"
-
+                self.pizzaArray = response
+                
+            }
+            catch{
+                print("could not serialize")
+                print(error)
+            }
+            
         }
+        else {
+            self.errorMessage = "Could not load the json file"
+        }
+        
+        
     }
     
-    func createMenu() {
-        self.pizzaArray.append(Pizza("pizza 1", "cheese", "pepporoni","olives"))
-        self.pizzaArray.append(Pizza("pizza 2", "cheese", "chicken","pinnapple"))
-        self.pizzaArray.append(Pizza("pizza 3", "cheese", "salami","red onions"))
-    }
+
+
     
 }
