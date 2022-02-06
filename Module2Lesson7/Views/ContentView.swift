@@ -19,10 +19,13 @@ struct ContentView: View {
             List(pizzaModel.pizzaArray, id: \.self) {pz in
                 
                 VStack(alignment: .leading) {
-                    Text(pz.name)
-                        .font(.largeTitle)
-                        .foregroundColor(Color.orange)
-                        .multilineTextAlignment(.leading)
+                    HStack{
+                        Image(pz.image).resizable().aspectRatio(contentMode: .fit).frame(width: 75.0, height: 75.0)
+                        Text(pz.name)
+                            .font(.largeTitle)
+                            .foregroundColor(Color.orange)
+                            .multilineTextAlignment(.leading)
+                    }
                     HStack{
                         Text(pz.topping1)
                         Text(pz.topping2)

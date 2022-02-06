@@ -61,8 +61,8 @@
 		0053EB5027A6F4AE00555E46 /* Module2Lesson7 */ = {
 			isa = PBXGroup;
 			children = (
-				0053EB8427AB7F0100555E46 /* Data */,
 				0053EB5127A6F4AE00555E46 /* Module2Lesson7App.swift */,
+				0053EB8427AB7F0100555E46 /* Data */,
 				0053EB5F27A6F4F300555E46 /* Models */,
 				0053EB6127A6F50E00555E46 /* ViewModels */,
 				0053EB6027A6F50500555E46 /* Views */,

@@ -3,18 +3,21 @@
         "name":"Hawaiian",
         "topping1":"Cheese",
         "topping2":"Pinapple",
-        "topping3":"Tomatoes"
+        "topping3":"Tomatoes",
+        "image":"hawaiian"
     },
     {
         "name":"Canadian",
         "topping1":"Bacon",
         "topping2":"Cheese",
-        "topping3":"Salami"
+        "topping3":"Salami",
+        "image":"meatlovers"
     },
     {
         "name":"Vegitarian",
         "topping1":"Cheese",
         "topping2":"Peppers",
-        "topping3":"Mushrooms"
+        "topping3":"Mushrooms",
+        "image":"deluxe"
     }
 ]
