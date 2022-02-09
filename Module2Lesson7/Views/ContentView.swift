@@ -14,25 +14,18 @@ struct ContentView: View {
    @ObservedObject var pizzaModel = PizzaModel()
     
     var body: some View {
-        Text("This is your pizza Order!")
         if (pizzaModel.errorMessage == "") {
-            List(pizzaModel.pizzaArray, id: \.self) {pz in
-                
-                VStack(alignment: .leading) {
-                    HStack{
-                        Image(pz.image).resizable().aspectRatio(contentMode: .fit).frame(width: 75.0, height: 75.0)
-                        Text(pz.name)
-                            .font(.largeTitle)
-                            .foregroundColor(Color.orange)
-                            .multilineTextAlignment(.leading)
-                    }
-                    HStack{
-                        Text(pz.topping1)
-                        Text(pz.topping2)
-                        Text(pz.topping3)
-                    }
-                }
+            NavigationView{
+                List(pizzaModel.pizzaArray, id: \.self) {pz in
+                    NavigationLink(destination: PizzaView(pz: pz), label: {
+                        VStack(alignment: .leading) {
+                            Text(pz.name)
+                        }
+                    })
+
+                }.navigationBarTitle("This is your pizza order")
             }
+
         }
         else {
             Text(pizzaModel.errorMessage)

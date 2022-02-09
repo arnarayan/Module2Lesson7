@@ -16,6 +16,7 @@
 		0053EB6727A7284E00555E46 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EB6627A7284E00555E46 /* Pizza.swift */; };
 		0053EB6927A728EB00555E46 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EB6827A728EB00555E46 /* PizzaModel.swift */; };
 		0053EB8627AE460000555E46 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0053EB8527AB7F5B00555E46 /* data.json */; };
+		0053EBB227B3594D00555E46 /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053EBB127B3594D00555E46 /* PizzaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0053EB6627A7284E00555E46 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		0053EB6827A728EB00555E46 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		0053EB8527AB7F5B00555E46 /* data.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		0053EBB127B3594D00555E46 /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0053EB5327A6F4AE00555E46 /* ContentView.swift */,
+				0053EBB127B3594D00555E46 /* PizzaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				0053EB5427A6F4AE00555E46 /* ContentView.swift in Sources */,
 				0053EB6727A7284E00555E46 /* Pizza.swift in Sources */,
 				0053EB5227A6F4AE00555E46 /* Module2Lesson7App.swift in Sources */,
+				0053EBB227B3594D00555E46 /* PizzaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
